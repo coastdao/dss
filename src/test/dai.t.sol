@@ -102,14 +102,14 @@ contract DaiTest is DSTest {
     uint fee = 1;
     uint nonce = 0;
     uint deadline = 0;
-    address cal = 0x29C76e6aD8f28BB1004902578Fb108c507Be341b;
+    address cal = 0x91Df5f4C03945cAa27dF6425Beb2861B14DCAa8f;
     address del = 0xdd2d5D3f7f1b35b7A0601D6A00DbB7D44Af58479;
-    bytes32 r = 0x8e30095d9e5439a4f4b8e4b5c94e7639756474d72aded20611464c8f002efb06;
-    bytes32 s = 0x49a0ed09658bc768d6548689bcbaa430cefa57846ef83cb685673a9b9a575ff4;
-    uint8 v = 27;
-    bytes32 _r = 0x85da10f8af2cf512620c07d800f8e17a2a4cd2e91bf0835a34bf470abc6b66e5;
-    bytes32 _s = 0x7e8e641e5e8bef932c3a55e7365e0201196fc6385d942c47d749bf76e73ee46f;
-    uint8 _v = 27;
+    bytes32 r = 0xdc259cc87aee2383c5e5a6fa3ba366e31698de2346a05938305dad1d1d0dc0c3;
+    bytes32 s = 0x183b5b3c06d786e487315942e0cf07d9bdb83e3340cc93730705bfc152fa5bdc;
+    uint8 v = 28;
+    bytes32 _r = 0x94b789ad5628312a5882acd5ed8c023457e3885aceebe09cac865e4efe6049f3;
+    bytes32 _s = 0x3a97813c960fcc1a94b560821abe6bea96ad4aa0f325e2ca13a8c1f003a9b789;
+    uint8 _v = 28;
 
 
     function setUp() public {
@@ -287,7 +287,7 @@ contract DaiTest is DSTest {
     }
 
     function testDomain_Separator() public {
-        assertEq(token.DOMAIN_SEPARATOR(), 0x68a9504c1a7fba795f7730732abab11cb5fa5113edd2396392abd5c1bbda4043);
+        assertEq(token.DOMAIN_SEPARATOR(), 0x55a2385595e314e197df57cfd2589f71641f662457f3cb6572091cf1f7e1f02e);
     }
 
     function testPermit() public {
